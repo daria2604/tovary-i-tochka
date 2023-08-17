@@ -5,11 +5,13 @@
 }
 
 body {
-  min-width: 1440px;
+  min-width: 320px;
   margin: 0;
+  background-color: #6725A8;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   line-height: normal;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
@@ -38,4 +40,5 @@ a {
 
 img {
   width: 100%;
+  display: block;
 }
