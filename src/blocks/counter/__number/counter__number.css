@@ -1,0 +1,13 @@
+.counter__number {
+  border: none;
+  padding: 0;
+  background-color: inherit;
+  width: 47px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  
+  &:focus-visible {
+    outline: none;
+  }
+}

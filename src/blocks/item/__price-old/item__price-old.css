@@ -1,0 +1,16 @@
+.item__price-old {
+  color: #A0A0A4;
+  font-size: 13px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.20);
+  position: relative;
+
+  &::before{
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 6px;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #A0A0A4;
+  }
+}

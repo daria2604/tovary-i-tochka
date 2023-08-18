@@ -1,0 +1,7 @@
+.header__search-icon {
+  background: url(../../../images/search-icon.svg) no-repeat center;
+  opacity: .4;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}

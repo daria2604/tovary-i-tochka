@@ -1,0 +1,4 @@
+.item__seller {
+  display: flex;
+  column-gap: 6px;
+}

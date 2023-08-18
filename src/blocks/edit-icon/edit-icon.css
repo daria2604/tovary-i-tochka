@@ -1,0 +1,6 @@
+.edit-icon {
+  background: url(../../images/edit-icon.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}

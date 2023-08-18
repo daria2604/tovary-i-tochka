@@ -1,0 +1,6 @@
+.order__payment-checkbox {
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  column-gap: 8px;
+}

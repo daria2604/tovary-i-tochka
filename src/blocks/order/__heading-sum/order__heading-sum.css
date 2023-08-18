@@ -1,0 +1,6 @@
+.order__heading-sum {
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  column-gap: 5px;
+}

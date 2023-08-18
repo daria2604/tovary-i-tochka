@@ -1,0 +1,6 @@
+.order__submit-checked {
+  background: url(../../../images/checked-black.svg) no-repeat center;
+  width: 11px;
+  height: 12px;
+  margin-top: 4px;
+}

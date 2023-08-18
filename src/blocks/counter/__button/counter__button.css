@@ -1,0 +1,9 @@
+.counter__button {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  vertical-align: sub;
+  font-size: 20px;
+  letter-spacing: -0.2px;
+  cursor: pointer;
+}

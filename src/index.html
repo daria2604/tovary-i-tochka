@@ -32,174 +32,318 @@
     </div>
   </header>
   <main class="main">
-    <section class="cart">
-      <h2 class="cart__heading">Корзина</h2>
-      <div class="cart__content">
-        <div class="cart__accordion">
-          <label class="cart__accordion-label checkbox">
-            <input type="checkbox" name="checkboxAll" class="visually-hidden">
-            <span class="checkbox__input"></span>
-            Выбрать все
-          </label>
-          <button type="button" class="cart__accordion-button"></button>
-        </div>
-        <div class="cart__items">
-          <div class="item">
-            <div class="item__container">
-              <div class="item__preview">
-                <label class="checkbox">
-                  <input type="checkbox" name="checkboxAll" class="visually-hidden">
-                  <span class="checkbox__input"></span>
-                </label>
-                <a class="item__preview-link">
-                  <img class="item__preview-image" src="./images/goods/tshirt.jpeg" alt="Футболка">
-                </a>
-              </div>
-              <div class="item__info">
-                <h3 class="item__name">Футболка UZcotton мужская</h3>
-                <div class="item__feature">
-                  <p class="item__color">Цвет: белый</p>
-                  <p class="item__size">Размер: 56</p>
+    <form action="post" name="cartForm" id="cartForm" class="form">
+      <div class="cart">
+        <div class="cart__content">
+          <h2 class="cart__heading">Корзина</h2>
+          <div class="cart__accordion">
+            <label class="cart__accordion-label checkbox">
+              <input type="checkbox" name="checkboxAll" class="visually-hidden" checked>
+              <span class="checkbox__input"></span>
+              Выбрать все
+            </label>
+            <button type="button" class="cart__accordion-button"></button>
+          </div>
+          <div class="cart__items">
+            <div class="item">
+              <div class="item__container">
+                <div class="item__preview">
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkboxAll" class="visually-hidden" checked>
+                    <span class="checkbox__input"></span>
+                  </label>
+                  <a class="item__preview-link">
+                    <img class="item__preview-image" src="./images/goods/tshirt.jpeg" alt="Футболка">
+                  </a>
                 </div>
-                <div class="item__store">
-                  <p class="item__warehouse">Коледино WB</p>
-                  <div class="item__seller">
-                    <p class="item__seller-name">OOO Вайлдберриз</p>
-                    <div class="item__seller-about"></div>
+                <div class="item__info">
+                  <h3 class="item__name">Футболка UZcotton мужская</h3>
+                  <div class="item__feature">
+                    <p class="item__color">Цвет: белый</p>
+                    <p class="item__size">Размер: 56</p>
+                  </div>
+                  <div class="item__store">
+                    <p class="item__warehouse">Коледино WB</p>
+                    <div class="item__seller">
+                      <p class="item__seller-name">OOO Вайлдберриз</p>
+                      <div class="item__seller-about"></div>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="item__actions">
-              <div class="item__counter">
-                <div class="item__counter-container">
+              <div class="item__actions">
+                <div class="item__counter">
                   <div class="counter">
                     <button type="button" class="counter__button counter__minus" disabled>&minus;</button>
                     <input type="number" min="1" maxlength="3" class="counter__number" value="1">
                     <button type="button" class="counter__button counter__plus">&plus;</button>
                   </div>
-                  <p class="counter__left">Осталось 2 шт.</p>
-                  <div class="counter__icons">
-                    <div class="counter__icon counter__icon-like"></div>
-                    <div class="counter__icon counter__icon-delete"></div>
+                  <p class="item__counter-left">Осталось 2 шт.</p>
+                  <div class="item__counter-icons">
+                    <div class="item__counter-icon like-icon"></div>
+                    <div class="item__counter-icon delete-icon"></div>
                   </div>
                 </div>
-              </div>
-              <div class="item__price">
-                <div class="item__price-wrap">
-                  <p class="item__price-new">522</p>
-                  <p class="item__price-currency">сом</p>
-                </div>
-                <p class="item__price-old">1051 сом</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item__container">
-              <div class="item__preview">
-                <label class="checkbox">
-                  <input type="checkbox" name="checkboxAll" class="visually-hidden">
-                  <span class="checkbox__input"></span>
-                </label>
-                <a class="item__preview-link">
-                  <img class="item__preview-image" src="./images/goods/phonecase.jpeg" alt="Чехол">
-                </a>
-              </div>
-              <div class="item__info">
-                <h3 class="item__name">Силиконовый чехол картхолдер 
-                  (отверстия) для карт, прозрачный кейс бампер 
-                  на Apple iPhone XR, MobiSafe</h3>
-                <div class="item__feature">
-                  <p class="item__color">Цвет: прозрачный</p>
-                </div>
-                <div class="item__store">
-                  <p class="item__warehouse">Коледино WB</p>
-                  <div class="item__seller">
-                    <p class="item__seller-name">OOO Мегапрофстиль</p>
-                    <div class="item__seller-about"></div>
+                <div class="item__price">
+                  <div class="item__price-wrap">
+                    <p class="item__price-new">522</p>
+                    <p class="item__price-currency">сом</p>
                   </div>
+                  <p class="item__price-old">1051 сом</p>
                 </div>
               </div>
             </div>
-            <div class="item__actions">
-              <div class="item__counter">
-                <div class="item__counter-container">
+            <div class="item">
+              <div class="item__container">
+                <div class="item__preview">
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkboxAll" class="visually-hidden" checked>
+                    <span class="checkbox__input"></span>
+                  </label>
+                  <a class="item__preview-link">
+                    <img class="item__preview-image" src="./images/goods/phonecase.jpeg" alt="Чехол">
+                  </a>
+                </div>
+                <div class="item__info">
+                  <h3 class="item__name">Силиконовый чехол картхолдер 
+                    (отверстия) для карт, прозрачный кейс бампер 
+                    на Apple iPhone XR, MobiSafe</h3>
+                  <div class="item__feature">
+                    <p class="item__color">Цвет: прозрачный</p>
+                  </div>
+                  <div class="item__store">
+                    <p class="item__warehouse">Коледино WB</p>
+                    <div class="item__seller">
+                      <p class="item__seller-name">OOO Мегапрофстиль</p>
+                      <div class="item__seller-about"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item__actions">
+                <div class="item__counter">
                   <div class="counter">
                     <button type="button" class="counter__button counter__minus">&minus;</button>
                     <input type="number" min="1" maxlength="3" class="counter__number" value="200">
                     <button type="button" class="counter__button counter__plus">&plus;</button>
                   </div>
-                  <div class="counter__icons">
-                    <div class="counter__icon counter__icon-like"></div>
-                    <div class="counter__icon counter__icon-delete"></div>
+                  <div class="item__counter-icons">
+                    <div class="item__counter-icon like-icon"></div>
+                    <div class="item__counter-icon delete-icon"></div>
                   </div>
                 </div>
-              </div>
-              <div class="item__price">
-                <div class="item__price-wrap">
-                  <p class="item__price-new item__price-new_size_16">2 100 047</p>
-                  <p class="item__price-currency">сом</p>
-                </div>
-                <p class="item__price-old">2 300 047 сом</p>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="item__container">
-              <div class="item__preview">
-                <label class="checkbox">
-                  <input type="checkbox" name="checkboxAll" class="visually-hidden">
-                  <span class="checkbox__input"></span>
-                </label>
-                <a class="item__preview-link">
-                  <img class="item__preview-image" src="./images/goods/color-pencils.jpeg" alt="Карандаши">
-                </a>
-              </div>
-              <div class="item__info">
-                <h3 class="item__name">Карандаши цветные Faber-Castell "Замок", 
-                  набор 24 цвета, заточенные, шестигранные, 
-                  Faber-Castell</h3>
-                <div class="item__store">
-                  <p class="item__warehouse">Коледино WB</p>
-                  <div class="item__seller">
-                    <p class="item__seller-name">OOO Вайлдберриз</p>
-                    <div class="item__seller-about"></div>
+                <div class="item__price">
+                  <div class="item__price-wrap">
+                    <p class="item__price-new item__price-new_size_16">2 100 047</p>
+                    <p class="item__price-currency">сом</p>
                   </div>
+                  <p class="item__price-old">2 300 047 сом</p>
                 </div>
               </div>
             </div>
-            <div class="item__actions">
-              <div class="item__counter">
-                <div class="item__counter-container">
+            <div class="item">
+              <div class="item__container">
+                <div class="item__preview">
+                  <label class="checkbox">
+                    <input type="checkbox" name="checkboxAll" class="visually-hidden" checked>
+                    <span class="checkbox__input"></span>
+                  </label>
+                  <a class="item__preview-link">
+                    <img class="item__preview-image" src="./images/goods/color-pencils.jpeg" alt="Карандаши">
+                  </a>
+                </div>
+                <div class="item__info">
+                  <h3 class="item__name">Карандаши цветные Faber-Castell "Замок", 
+                    набор 24 цвета, заточенные, шестигранные, 
+                    Faber-Castell</h3>
+                  <div class="item__store">
+                    <p class="item__warehouse">Коледино WB</p>
+                    <div class="item__seller">
+                      <p class="item__seller-name">OOO Вайлдберриз</p>
+                      <div class="item__seller-about"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item__actions">
+                <div class="item__counter">
                   <div class="counter">
                     <button type="button" class="counter__button counter__minus">&minus;</button>
                     <input type="number" min="1" maxlength="3" class="counter__number" value="2">
-                    <button type="button" class="counter__button counter__plus">&plus;</button>
+                    <button type="button" class="counter__button counter__plus" disabled>&plus;</button>
                   </div>
-                  <p class="counter__left">Осталось 2 шт.</p>
-                  <div class="counter__icons">
-                    <div class="counter__icon counter__icon-like"></div>
-                    <div class="counter__icon counter__icon-delete"></div>
+                  <p class="item__counter-left">Осталось 2 шт.</p>
+                  <div class="item__counter-icons">
+                    <div class="item__counter-icon like-icon"></div>
+                    <div class="item__counter-icon delete-icon"></div>
                   </div>
                 </div>
-              </div>
-              <div class="item__price">
-                <div class="item__price-wrap">
-                  <p class="item__price-new">494</p>
-                  <p class="item__price-currency">сом</p>
+                <div class="item__price">
+                  <div class="item__price-wrap">
+                    <p class="item__price-new">494</p>
+                    <p class="item__price-currency">сом</p>
+                  </div>
+                  <p class="item__price-old">950 сом</p>
                 </div>
-                <p class="item__price-old">950 сом</p>
               </div>
             </div>
           </div>
+          <div class="cart__absent">
+            <div class="cart__accordion">
+              <h3 class="cart__absent-heading">Отсутствуют · 3 товара</h3>
+              <button type="button" class="cart__accordion-button"></button>
+            </div>
+            <div class="cart__items cart__items_absent">
+            <div class="item item_absent">
+              <div class="item__container">
+                <div class="item__preview">
+                  <a class="item__preview-link">
+                    <img class="item__preview-image item__preview-image_absent" src="./images/goods/tshirt.jpeg" alt="Футболка">
+                  </a>
+                </div>
+                <div class="item__info">
+                  <h3 class="item__name item__name_absent">Футболка UZcotton мужская</h3>
+                  <div class="item__feature item__feature_absent">
+                    <p class="item__color">Цвет: белый</p>
+                    <p class="item__size">Размер: 56</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__actions">
+                <div class="item__counter-icons">
+                  <div class="item__counter-icon like-icon"></div>
+                  <div class="item__counter-icon delete-icon"></div>
+                </div>
+                <div class="item__price"></div>
+              </div>
+            </div>
+            <div class="item item_absent">
+              <div class="item__container">
+                <div class="item__preview">
+                  <a class="item__preview-link">
+                    <img class="item__preview-image item__preview-image_absent" src="./images/goods/phonecase.jpeg" alt="Чехол">
+                  </a>
+                </div>
+                <div class="item__info">
+                  <h3 class="item__name item__name_absent">Силиконовый чехол картхолдер (отверстия) для карт, 
+                    прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h3>
+                  <div class="item__feature item__feature_absent">
+                    <p class="item__color">Цвет: прозрачный</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item__actions">
+                <div class="item__counter-icons">
+                  <div class="item__counter-icon like-icon"></div>
+                  <div class="item__counter-icon delete-icon"></div>
+                </div>
+                <div class="item__price"></div>
+              </div>
+            </div>
+            <div class="item item_absent">
+              <div class="item__container">
+                <div class="item__preview">
+                  <a class="item__preview-link">
+                    <img class="item__preview-image item__preview-image_absent" src="./images/goods/color-pencils.jpeg" alt="Карандаши">
+                  </a>
+                </div>
+                <div class="item__info">
+                  <h3 class="item__name item__name_absent">Карандаши цветные Faber-Castell "Замок", 
+                    набор 24 цвета, заточенные, шестигранные, 
+                    Faber-Castell </h3>
+                  <div class="item__feature item__feature_absent">
+                  </div>
+                </div>
+              </div>
+              <div class="item__actions">
+                <div class="item__counter-icons">
+                  <div class="item__counter-icon like-icon"></div>
+                  <div class="item__counter-icon delete-icon"></div>
+                </div>
+                <div class="item__price"></div>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="total">
-      <div class="total__container">
-        <h2 class="total__heading">Итого</h2>
+
+      <div class="order">
+        <div class="order__sum">
+          <div class="order__line order__total">
+            <h2 class="order__heading">Итого</h2>
+            <div class="order__heading-sum">
+              <p class="order__heading">2 101 063</p>
+              <span class="order__currency">сом</span>
+            </div>
+          </div>
+          <div class="order__info">
+            <div class="order__line order__info-count">
+              <p class="order__info-title">203 товара</p>
+              <p class="order__info-sum">2 302 048 сом</p>
+            </div>
+            <div class="order__line order__info-discount">
+              <p class="order__info-title">Скидка</p>
+              <p class="order__info-sum">-200 985 сом</p>
+            </div>
+            <div class="order__line order__info-delivery">
+              <p class="order__info-title">Доставка</p>
+              <p class="order__info-sum">Бесплатно</p>
+            </div>
+          </div>
+        </div>
+        <div class="order__delivery">
+          <div class="order__delivery-info">
+            <div class="order__line">
+              <h4 class="order__delivery-heading">Доставка в пункт выдачи</h4>
+              <div class="order__delivery-edit edit-icon"></div>
+            </div>
+            <address class="order__delivery-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</address>
+            <p class="order__delivery-date">5–8 фев</p>
+          </div>
+          <div class="order__shipping order__info-block">
+            <div class="order__shipping-icon"></div>
+            <p class="order__shipping-text">Обратная доставка товаров на склад при отказе — 
+              <span class="order__shipping-accent">бесплатно</span>
+            </p>
+          </div>
+        </div>
+        <div class="order__payment">
+          <div class="order__payment-info">
+            <div class="order__line">
+              <h4 class="order__payment-heading">Оплата картой</h4>
+              <div class="order__payment-edit edit-icon"></div>
+            </div>
+            <div class="order__card">
+              <div class="order__card-icon card-icon"></div>
+              <p class="order__card-number">1234 12•• •••• 1234</p>
+            </div>
+            <div class="order__payment-now order__info-block">
+              <label class="order__payment-checkbox">
+                <input type="checkbox" class="visually-hidden">
+                <span class="checkbox__input"></span>
+                Списать оплату сразу
+              </label>
+              <p class="order__payment-caption">Спишем оплату с карты при получении</p>
+            </div>
+          </div>
+        </div>
+        <div class="order__submit">
+          <button type="submit" class="button order__submit-button">Заказать</button>
+          <div class="order__submit-agreement">
+            <div class="order__submit-checked"></div>
+            <p class="order__submit-text">Соглашаюсь 
+              <a href="#" class="order__submit-link">с правилами пользования торговой 
+              </br>
+              площадкой</a>  
+              и 
+              <a href="#" class="order__submit-link">возврата</a>
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+    </form>
+
   </main>
 </body>
 </html>

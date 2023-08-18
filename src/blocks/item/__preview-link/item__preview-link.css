@@ -1,0 +1,21 @@
+.item__preview-link {
+  display: block;
+  width: 72px;
+  height: inherit;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 8px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(000, 000, 000, .05);
+    z-index: 1;
+  }
+}

@@ -5,10 +5,3 @@
   background-color: transparent;
   cursor: pointer;
 }
-
-.burger-menu__lines {
-  display: block;
-  background: url(../../images/burger-menu.svg) no-repeat center;
-  width: 28px;
-  height: 24px;
-}

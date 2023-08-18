@@ -1,0 +1,25 @@
+input[type='checkbox'] + .checkbox__input {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border: 1px solid rgb(000, 000, 000, .2);
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+input[type='checkbox']:checked + .checkbox__input {
+  background-color: #CB11AB;
+  border: transparent;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 4px;
+    right: 5px;
+    background: url(../../../images/checked.svg) no-repeat center;
+    width: 12px;
+    height: 14px;
+  }
+}

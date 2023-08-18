@@ -1,0 +1,7 @@
+.item__store {
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  font-size: 13px;
+  color: #A0A0A4;
+}

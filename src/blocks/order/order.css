@@ -1,5 +1,8 @@
-.total {
-  grid-area: total;
+.order {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  height: fit-content;
   padding: 16px 24px 24px 24px;
   background-color: #fff;
   border-radius: 16px;
