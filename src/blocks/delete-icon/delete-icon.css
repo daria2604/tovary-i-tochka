@@ -1,3 +1,7 @@
 .delete-icon {
   background: url(../../images/bin.svg) no-repeat center;
+
+  &:hover {
+    background-image: url(../../images/bin-active.svg);
+  }
 }

@@ -1,3 +1,7 @@
 .like-icon {
   background: url(../../images/like.svg) no-repeat center;
+
+  &:hover {
+    background-image: url(../../images/like-active.svg);
+  }
 }

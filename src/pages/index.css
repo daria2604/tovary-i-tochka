@@ -98,6 +98,7 @@
 @import url(../blocks/counter/__number/counter__number.css);
 
 @import url(../blocks/like-icon/like-icon.css);
+@import url(../blocks/like-icon/_active/like-icon_active.css);
 @import url(../blocks/delete-icon/delete-icon.css);
 @import url(../blocks/card-icon/card-icon.css);
 @import url(../blocks/edit-icon/edit-icon.css);
