@@ -153,3 +153,13 @@
 @import url(../blocks/like-icon/_active/like-icon_active.css);
 @import url(../blocks/delete-icon/delete-icon.css);
 @import url(../blocks/edit-icon/edit-icon.css);
+
+@import url(../blocks/tooltip/tooltip.css);
+@import url(../blocks/tooltip/_visible/tooltip_visible.css);
+@import url(../blocks/tooltip/_type/tooltip_type_store.css);
+@import url(../blocks/tooltip/_type/tooltip_type_discount.css);
+@import url(../blocks/tooltip/_type/tooltip_type_delivery.css);
+@import url(../blocks/tooltip/__heading/tooltip__heading.css);
+@import url(../blocks/tooltip/__text/tooltip__text.css);
+@import url(../blocks/tooltip/__list/tooltip__list.css);
+@import url(../blocks/tooltip/__heading-item/tooltip__heading-item.css);

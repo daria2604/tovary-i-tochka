@@ -1,0 +1,6 @@
+.tooltip_type_discount {
+  flex-direction: row;
+  column-gap: 8px;
+  top: 63px;
+  right: 0;
+}
