@@ -1,0 +1,5 @@
+.delivery__address-about {
+  display: flex;
+  column-gap: 8px;
+  font-size: 13px;
+}

@@ -1,7 +1,4 @@
 .order__card {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  column-gap: 8px;
+  font-size: 13px;
   margin: 4px 0 12px 0;
 }

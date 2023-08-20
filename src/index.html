@@ -23,9 +23,12 @@
         <a class="navbar__button" href="#">
           <span class="navbar__icon navbar__icon-profile"></span>
           Профиль
+        </a>
         <a class="navbar__button" href="#">
           <span class="navbar__icon navbar__icon-cart"></span>
-          <span class="navbar__icon-cart_label navbar__icon-cart_label_active">3</span>
+          <div class="navbar__label label label_active label_digit_one">
+            <span class="label__item label__item-cart">3</span>
+          </div>
           Корзина
         </a>
       </nav> 
@@ -33,9 +36,9 @@
   </header>
   <main class="main">
     <form action="post" name="cartForm" id="cartForm" class="form">
-      <div class="cart">
-        <div class="cart__content">
-          <h2 class="cart__heading">Корзина</h2>
+      <div class="content">
+        <div class="cart">
+          <h1 class="cart__heading">Корзина</h1>
           <div class="cart__accordion">
             <label class="cart__accordion-label checkbox">
               <input type="checkbox" name="checkboxAll" class="visually-hidden" checked>
@@ -75,7 +78,7 @@
                 <div class="item__counter">
                   <div class="counter">
                     <button type="button" class="counter__button counter__minus" disabled>&minus;</button>
-                    <input type="number" min="1" maxlength="3" class="counter__number" value="1">
+                    <input type="number" min="1" class="counter__number" value="1">
                     <button type="button" class="counter__button counter__plus">&plus;</button>
                   </div>
                   <p class="item__counter-left">Осталось 2 шт.</p>
@@ -124,7 +127,7 @@
                 <div class="item__counter">
                   <div class="counter">
                     <button type="button" class="counter__button counter__minus">&minus;</button>
-                    <input type="number" min="1" maxlength="3" class="counter__number" value="200">
+                    <input type="number" min="1" class="counter__number" value="200">
                     <button type="button" class="counter__button counter__plus">&plus;</button>
                   </div>
                   <div class="item__counter-icons">
@@ -169,7 +172,7 @@
                 <div class="item__counter">
                   <div class="counter">
                     <button type="button" class="counter__button counter__minus">&minus;</button>
-                    <input type="number" min="1" maxlength="3" class="counter__number" value="2">
+                    <input type="number" min="1" class="counter__number" value="2">
                     <button type="button" class="counter__button counter__plus" disabled>&plus;</button>
                   </div>
                   <p class="item__counter-left">Осталось 2 шт.</p>
@@ -201,7 +204,7 @@
                     <img class="item__preview-image item__preview-image_absent" src="./images/goods/tshirt.jpeg" alt="Футболка">
                   </a>
                 </div>
-                <div class="item__info">
+                <div class="item__info item__info_absent">
                   <h3 class="item__name item__name_absent">Футболка UZcotton мужская</h3>
                   <div class="item__feature item__feature_absent">
                     <p class="item__color">Цвет: белый</p>
@@ -224,7 +227,7 @@
                     <img class="item__preview-image item__preview-image_absent" src="./images/goods/phonecase.jpeg" alt="Чехол">
                   </a>
                 </div>
-                <div class="item__info">
+                <div class="item__info item__info_absent">
                   <h3 class="item__name item__name_absent">Силиконовый чехол картхолдер (отверстия) для карт, 
                     прозрачный кейс бампер на Apple iPhone XR, MobiSafe</h3>
                   <div class="item__feature item__feature_absent">
@@ -247,7 +250,7 @@
                     <img class="item__preview-image item__preview-image_absent" src="./images/goods/color-pencils.jpeg" alt="Карандаши">
                   </a>
                 </div>
-                <div class="item__info">
+                <div class="item__info item__info_absent">
                   <h3 class="item__name item__name_absent">Карандаши цветные Faber-Castell "Замок", 
                     набор 24 цвета, заточенные, шестигранные, 
                     Faber-Castell </h3>
@@ -266,9 +269,122 @@
           </div>
           </div>
         </div>
+        <div class="delivery container">
+          <div class="heading">
+            <h2 class="heading__text">Способ доставки</h2>
+            <button type="button" class="heading__edit-button">Изменить</button>
+          </div>
+          <div class="delivery__content">
+            <ul class="delivery__heading-list">
+              <li class="delivery__heading">Пункт выдачи</li>
+              <li class="delivery__heading">Стоимость доставки</li>
+              <li class="delivery__heading">5—6 февраля</li>
+              <li class="delivery__heading">7—8 февраля</li>
+            </ul>
+            <ul class="delivery__info-list">
+              <li class="delivery__info">
+                <address class="delivery__address">Бишкек, улица Ахматбека Суюмбаева, 12/1</address>
+                <div class="delivery__address-about">
+                  <div class="delivery__address-rating">
+                    <span class="delivery__address-star"></span>
+                    <p class="delivery__address-number">4.99</p>
+                  </div>
+                  <p class="delivery__schedule">Ежедневно с 10 до 21 </p>
+                </div>
+              </li>
+              <li class="delivery__info">Бесплатно</li>
+              <li class="delivery__info">
+                <ul class="delivery__item-list">
+                  <li class="delivery__item">
+                    <img class="delivery__item-image" src="./images/goods/tshirt.jpeg" alt="">
+                  </li>
+                  <li class="delivery__item">
+                    <div class="label label_active delivery__item-label label_digit_three">
+                      <span class="label__item">184</span>
+                    </div>
+                    
+                    <img class="delivery__item-image" src="./images/goods/phonecase.jpeg" alt="">
+                  </li>
+                  <li class="delivery__item">
+                    <div class="label label_active delivery__item-label label_digit_one">
+                      <span class="label__item">2</span>
+                    </div>
+                    <img class="delivery__item-image" src="./images/goods/color-pencils.jpeg" alt="">
+                  </li>
+                </ul>
+              </li>
+              <li class="delivery__info">
+                <ul class="delivery__item-list">
+                  <li class="delivery__item">
+                    <div class="label label_active delivery__item-label label_digit_two">
+                      <span class="label__item">16</span>
+                    </div>
+                    <img class="delivery__item-image" src="./images/goods/phonecase.jpeg" alt="">
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="shipping delivery__shipping">
+            <div class="shipping__icon"></div>
+            <p class="shipping__text">Обратная доставка товаров на склад при отказе — 
+              <span class="shipping__text-accent">бесплатно</span>
+            </p>
+          </div>
+        </div>
+        <div class="payment container">
+          <div class="heading">
+            <h2 class="heading__text">Способ оплаты</h2>
+            <button type="button" class="heading__edit-button">Изменить</button>
+          </div>
+          <div class="card payment__card">
+            <div class="card__icon">
+              <img src="./images/payment/mir-logo.svg" alt="" class="card__icon-image">
+            </div>
+            <p class="card__number">1234 56•• •••• 1234</p>
+            <p class="card__expire">01/30</p>
+          </div>
+          <p class="payment__caption">Спишем оплату с карты при получении</p>
+        </div>
+        <div class="receiver container">
+          <div class="heading">
+            <h2 class="heading__text">Получатель</h2>
+          </div>
+          <div class="receiver__inputs">
+            <div class="receiver__input receiver__info">
+              <div class="receiver__input-wrap">
+                <label class="receiver__label" for="name">Имя</label>
+                <input type="text" name="name" id="name" class="receiver__input-field receiver__input-field_type_name" placeholder="Имя">
+                <p class="error">Укажите имя</p>
+              </div>
+              <div class="receiver__input-wrap">
+                <label class="receiver__label" for="surname">Фамилия</label>
+                <input type="text" name="surname" id="surname" class="receiver__input-field receiver__input-field_type_surname" placeholder="Фамилия">
+                <p class="error">Введите фамилию</p>
+              </div>
+            </div>
+            <div class="receiver__input receiver__contacts">
+              <div class="receiver__input-wrap">
+                <label class="receiver__label" for="email">Почта</label>
+                <input type="email" name="email" id="email" class="receiver__input-field receiver__input-field_type_email" placeholder="Почта">
+                <p class="error">Укажите электронную почту</p>
+              </div>
+              <div class="receiver__input-wrap">
+                <label class="receiver__label receiver__label_active" for="telephone">Телефон</label>
+                <input type="tel" name="telephone" id="telephone" class="receiver__input-field receiver__input-field_type_telephone" placeholder="Телефон" value="+7 988 123-45-67">
+                <p class="error">Укажите номер телефона</p>
+              </div>
+              <div class="receiver__input-wrap">
+                <label class="receiver__label" for="inn">ИНН</label>
+                <input type="number" min="14" name="inn" id="inn" class="receiver__input-field receiver__input-field_type_inn" placeholder="ИНН">
+                <p class="error error_active receiver__inn-caption">Для таможенного оформления</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="order">
+      
+      <div class="order container">
         <div class="order__sum">
           <div class="order__line order__total">
             <h2 class="order__heading">Итого</h2>
@@ -301,10 +417,10 @@
             <address class="order__delivery-address">Бишкек, улица Ахматбека Суюмбаева, 12/1</address>
             <p class="order__delivery-date">5–8 фев</p>
           </div>
-          <div class="order__shipping order__info-block">
-            <div class="order__shipping-icon"></div>
-            <p class="order__shipping-text">Обратная доставка товаров на склад при отказе — 
-              <span class="order__shipping-accent">бесплатно</span>
+          <div class="order__shipping order__info-block shipping">
+            <div class="order__shipping-icon shipping__icon"></div>
+            <p class="order__shipping-text shipping__text">Обратная доставка товаров на склад при отказе — 
+              <span class="order__shipping-accent shipping__text-accent">бесплатно</span>
             </p>
           </div>
         </div>
@@ -314,9 +430,11 @@
               <h4 class="order__payment-heading">Оплата картой</h4>
               <div class="order__payment-edit edit-icon"></div>
             </div>
-            <div class="order__card">
-              <div class="order__card-icon card-icon"></div>
-              <p class="order__card-number">1234 12•• •••• 1234</p>
+            <div class="card order__card">
+              <div class="card__icon">
+                <img src="./images/payment/mir-logo.svg" alt="" class="card__icon-image">
+              </div>
+              <p class="card__number">1234 12•• •••• 1234</p>
             </div>
             <div class="order__payment-now order__info-block">
               <label class="order__payment-checkbox">
@@ -324,7 +442,7 @@
                 <span class="checkbox__input"></span>
                 Списать оплату сразу
               </label>
-              <p class="order__payment-caption">Спишем оплату с карты при получении</p>
+              <p class="order__payment-caption payment__caption">Спишем оплату с карты при получении</p>
             </div>
           </div>
         </div>
@@ -334,7 +452,7 @@
             <div class="order__submit-checked"></div>
             <p class="order__submit-text">Соглашаюсь 
               <a href="#" class="order__submit-link">с правилами пользования торговой 
-              </br>
+              <br>
               площадкой</a>  
               и 
               <a href="#" class="order__submit-link">возврата</a>
@@ -343,7 +461,7 @@
         </div>
       </div>
     </form>
-
   </main>
+  <footer class="footer">&copy; 2022  ООО «Товары и точка»</footer>
 </body>
 </html>

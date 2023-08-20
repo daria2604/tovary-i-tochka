@@ -1,5 +1,5 @@
 .item__info {
-  max-width: 275px;
+  width: 275px;
   display: flex;
   flex-direction: column;
   row-gap: 8px;

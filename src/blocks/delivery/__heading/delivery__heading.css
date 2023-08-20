@@ -1,0 +1,17 @@
+.delivery__heading {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+
+  &:first-of-type {
+    height: 44px;
+  }
+
+  &:nth-of-type(3) {
+    height: 56px;
+  }
+
+  &::nth-of-type(4) {
+    height: 56px;
+  }
+}

@@ -1,0 +1,6 @@
+.delivery__address-star {
+  display: block;
+  background: url(../../../images/rating-star.svg) no-repeat center;
+  width: 12px;
+  height: 12px;
+}

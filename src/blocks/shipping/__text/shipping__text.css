@@ -1,0 +1,6 @@
+.shipping__text {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 4px;
+  font-size: 13px;
+}

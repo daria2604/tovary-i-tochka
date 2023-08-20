@@ -1,0 +1,20 @@
+.delivery__item {
+  display: block;
+  object-fit: contain;
+  width: 40px;
+  height: 56px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: inherit;
+    height: inherit;
+    border-radius: 8px;
+    background: rgba(000, 000, 000, .05);
+    z-index: 1;
+  }
+}

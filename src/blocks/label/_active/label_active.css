@@ -1,0 +1,11 @@
+.label_active {
+  display: inline-block;
+  position: absolute;
+  min-width: 18px;
+  height: 18px;
+  background-color: #F55123;
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+  line-height: 1.8;
+}

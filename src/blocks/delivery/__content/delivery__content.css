@@ -1,0 +1,5 @@
+.delivery__content {
+  display: flex;
+  column-gap: 32px;
+  margin: 16px 0 26px 0;
+}
