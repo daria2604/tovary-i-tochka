@@ -1,5 +1,5 @@
 .item__counter-icons {
-  display: flex;
+  display: none;
   column-gap: 16px;
   justify-content: flex-end;
 }

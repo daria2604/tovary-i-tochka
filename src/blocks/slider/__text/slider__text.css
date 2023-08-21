@@ -1,0 +1,15 @@
+.slider__text {
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 24px;
+  border: 2px solid rgba(203, 17, 171, 0.15);
+  padding: 8px 0 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+input[type='radio']:checked + .slider__text{
+  border-color: #CB11AB;
+}
