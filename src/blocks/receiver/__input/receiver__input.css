@@ -2,3 +2,9 @@
   display: flex;
   column-gap: 24px;
 }
+
+@media (max-width: 690px) {
+  .receiver__input {
+    flex-direction: column;
+  }
+}

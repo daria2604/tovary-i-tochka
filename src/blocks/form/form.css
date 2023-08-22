@@ -6,3 +6,10 @@
   position: relative;
   margin-bottom: 10px;
 }
+
+@media (max-width: 820px) {
+  .form {
+    flex-direction: column;
+    row-gap: 24px;
+  }
+}

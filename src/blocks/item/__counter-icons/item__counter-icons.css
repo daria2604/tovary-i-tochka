@@ -3,3 +3,9 @@
   column-gap: 16px;
   justify-content: flex-end;
 }
+
+@media (max-width: 690px) {
+  .item__counter-icons {
+    display: flex;
+  }
+}

@@ -10,3 +10,9 @@
     column-gap: 17px;
   }
 }
+
+@media (max-width: 690px) {
+  .item {
+
+  }
+}
