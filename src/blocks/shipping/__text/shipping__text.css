@@ -1,6 +1,9 @@
 .shipping__text {
-  display: flex;
-  align-items: flex-start;
-  column-gap: 4px;
   font-size: 13px;
+}
+
+@media (max-width: 1024px) {
+  .shipping__text {
+    text-wrap: balance;
+  }
 }

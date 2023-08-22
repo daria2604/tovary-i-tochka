@@ -4,3 +4,9 @@
   padding-top: 12px;
   position: relative;
 }
+
+@media (max-width: 1024px) {
+  .item {
+    column-gap: 17px;
+  }
+}
