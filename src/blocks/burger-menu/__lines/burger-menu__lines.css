@@ -14,7 +14,7 @@
     height: 4px;
     background-color: #fff;
     border-radius: 8px;
-    top: -8px;
+    top: -10px;
   }
 
   &::before {
@@ -25,7 +25,7 @@
     height: 4px;
     background-color: #fff;
     border-radius: 8px;
-    top: 8px;
+    top: 10px;
   }
 }
 
