@@ -3,9 +3,3 @@
   height: inherit;
   border-radius: 8px;
 }
-
-@media (max-width: 690px) {
-  .item__preview-image {
-
-  }
-}

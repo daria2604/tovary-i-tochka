@@ -3,3 +3,9 @@
   column-gap: 8px;
   align-items: center;
 }
+
+@media (max-width: 435px) {
+  .shipping {
+    padding: 0 8px;
+  }
+}

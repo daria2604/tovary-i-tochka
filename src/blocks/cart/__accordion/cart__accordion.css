@@ -6,3 +6,9 @@
   padding-bottom: 16px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.10);
 }
+
+@media (max-width: 550px) {
+  .cart__accordion {
+    border-bottom: 0;
+  }
+}

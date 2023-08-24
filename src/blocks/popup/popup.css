@@ -22,3 +22,13 @@
     z-index: 1;
   }
 }
+
+@media (max-width: 550px) {
+  .popup {
+    align-items: flex-start;
+  }
+
+  .popup::after {
+    background-color: #fff;
+  }
+}

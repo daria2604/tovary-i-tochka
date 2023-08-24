@@ -13,3 +13,9 @@
     border-radius: 36px 36px 0 0;
   }
 }
+
+@media (max-width: 550px) {
+  .header::after {
+    border-radius: 24px 24px 0 0;
+  }
+}

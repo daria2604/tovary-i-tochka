@@ -1,3 +1,12 @@
 .checkbox {
   align-self: center;
 }
+
+@media (max-width: 550px) {
+  .checkbox_type_mobile {
+    position: absolute;
+    z-index: 2;
+    top: 4px;
+    right: 54px;
+  }
+}

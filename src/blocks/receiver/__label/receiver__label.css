@@ -3,3 +3,9 @@
   font-size: 13px;
   margin-bottom: 2px;
 }
+
+@media (max-width: 435px) {
+  .receiver__label {
+    line-height: 1;
+  }
+}

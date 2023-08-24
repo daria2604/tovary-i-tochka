@@ -2,3 +2,9 @@
   width: 106px;
   cursor: pointer;
 }
+
+@media (max-width: 550px) {
+  .header__logo {
+    display: none;
+  }
+}

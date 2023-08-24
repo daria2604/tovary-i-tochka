@@ -5,8 +5,9 @@
   row-gap: 8px;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 550px) {
   .item__info {
-
+    row-gap: 0;
+    width: 100%;
   }
 }

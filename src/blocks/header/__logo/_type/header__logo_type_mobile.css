@@ -1,0 +1,16 @@
+.header__logo_type_mobile {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .header__logo_type_mobile {
+    display: inline-block;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 0.9;
+    font-variant: all-small-caps;
+    letter-spacing: 2.8px;
+    padding: 11px 4px 21px 4px;
+  }
+}

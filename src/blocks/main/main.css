@@ -4,3 +4,9 @@
   position: relative;
   z-index: 1;
 }
+
+@media (max-width: 550px) {
+  .main {
+    padding: 0;
+  }
+}

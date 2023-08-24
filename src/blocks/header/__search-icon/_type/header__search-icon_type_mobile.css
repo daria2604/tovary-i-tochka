@@ -1,0 +1,10 @@
+.header__search-icon_type_mobile {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .header__search-icon_type_mobile {
+    display: block;
+    border: 0;
+  }
+}

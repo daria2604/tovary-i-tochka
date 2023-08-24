@@ -1,4 +1,17 @@
 .item__actions {
-  display: flex;
+  display: grid;
+  grid-template-areas:
+  "counter price"
+  "icons .";
   column-gap: 16px;
+  row-gap: 8px;
+  height: 100%;
+}
+
+@media (max-width: 550px) {
+  .item__actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

@@ -3,3 +3,9 @@
   column-gap: 16px;
   font-size: 13px;
 }
+
+@media (max-width: 550px) {
+  .item__feature {
+    margin: 8px 0;
+  }
+}

@@ -1,11 +1,14 @@
 .item__counter {
+  grid-area: counter;
   display: flex;
   flex-direction: column;
   row-gap: 8px;
 }
 
-@media (max-width: 690px) {
+@media (max-width: 550px) {
   .item__counter {
-    
+    flex-direction: row;
+    column-gap: 16px;
+    align-items: center;
   }
 }

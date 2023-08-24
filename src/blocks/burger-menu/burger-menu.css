@@ -3,5 +3,14 @@
   border-radius: 8px;
   padding: 12px 10px;
   background-color: transparent;
+  height: 52px;
   cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .burger-menu {
+    border: none;
+    padding: 0;
+    height: 28px;
+  }
 }

@@ -5,3 +5,12 @@
   height: 24px;
   cursor: pointer;
 }
+
+@media (max-width: 550px) {
+  .header__search-icon {
+    opacity: 1;
+    width: 28px;
+    height: 28px;
+    align-self: center;
+  }
+}

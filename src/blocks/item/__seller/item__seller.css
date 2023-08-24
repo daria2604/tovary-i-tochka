@@ -2,3 +2,9 @@
   display: flex;
   column-gap: 6px;
 }
+
+@media (max-width: 550px) {
+  .item__seller {
+    display: none;
+  }
+}

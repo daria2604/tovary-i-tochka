@@ -5,3 +5,10 @@
   padding: 10px 3px;
   text-align: center;
 }
+
+@media (max-width: 550px) {
+  .counter {
+    width: 80px;
+    padding: 4px 8px;
+  }
+}

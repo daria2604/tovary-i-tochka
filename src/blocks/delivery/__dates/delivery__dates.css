@@ -1,0 +1,11 @@
+.delivery__dates {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+@media (max-width: 435px) {
+  .delivery__dates {
+    row-gap: 24px;
+  }
+}

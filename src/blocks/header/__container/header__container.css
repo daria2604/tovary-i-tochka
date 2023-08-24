@@ -3,3 +3,16 @@
   display: flex;
   column-gap: 32px;
 }
+
+@media (max-width: 550px) {
+  .header__container {
+    padding: 0 13px 25px 13px;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 435px) {
+  .header__container {
+    column-gap: 16px;
+  }
+}

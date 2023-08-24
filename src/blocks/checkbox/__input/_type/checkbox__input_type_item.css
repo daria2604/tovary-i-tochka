@@ -1,0 +1,5 @@
+@media (max-width: 550px) {
+  input[type='checkbox'] + .checkbox__input_type_item {
+    background-color: #fff;
+  }
+}

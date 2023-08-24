@@ -4,3 +4,10 @@
   letter-spacing: -0.28px;
   margin-bottom: 27px;
 }
+
+@media (max-width: 550px) {
+  .cart__heading {
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+}

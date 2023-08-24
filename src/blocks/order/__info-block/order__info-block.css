@@ -5,3 +5,9 @@
   column-gap: 8px;
   border-radius: 8px;
 }
+
+@media (max-width: 550px) {
+  .order__info-block {
+    background-color: #F0ECF4;
+  }
+}

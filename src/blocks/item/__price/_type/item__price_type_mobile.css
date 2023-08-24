@@ -1,0 +1,14 @@
+.item__price_type_mobile {
+  display: none;
+}
+
+@media (max-width: 690px) {
+  .item__price_type_mobile {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    column-gap: 5px;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+}

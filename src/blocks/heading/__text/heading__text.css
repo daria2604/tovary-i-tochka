@@ -3,3 +3,11 @@
   line-height: 1.3;
   letter-spacing: -0.24px;
 }
+
+@media (max-width: 550px) {
+  .heading__text {
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.2px;
+  }
+}

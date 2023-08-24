@@ -8,3 +8,23 @@
     flex-direction: column;
   }
 }
+
+@media (max-width: 550px) {
+  .receiver__input {
+    row-gap: 16px;
+  }
+
+  .receiver__input:first-of-type {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 435px) {
+  .receiver__input {
+    row-gap: 8px;
+  }
+
+  .receiver__input:first-of-type {
+    margin-bottom: 8px;
+  }
+}

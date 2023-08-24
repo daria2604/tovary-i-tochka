@@ -1,0 +1,22 @@
+.item__icons {
+  grid-area: icons;
+  display: none;
+  column-gap: 16px;
+  justify-content: flex-end;
+}
+
+.item:hover > .item__actions > .item__icons {
+  display: flex;
+}
+
+@media (max-width: 690px) {
+  .item__icons {
+    display: flex;
+  }
+}
+
+@media (max-width: 550px) {
+  .item__icons {
+    padding: 8px 10px;
+  }
+}

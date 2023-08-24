@@ -1,3 +1,9 @@
 .payment {
   margin: 16px 0;
 }
+
+@media (max-width: 550px) {
+  .payment {
+    margin: 12px 0;
+  }
+}

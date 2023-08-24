@@ -1,0 +1,11 @@
+.item__icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  .item__icon {
+    padding: 0 13px;
+  }
+}

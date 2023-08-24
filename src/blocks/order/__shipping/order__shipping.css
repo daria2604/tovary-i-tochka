@@ -2,3 +2,9 @@
   margin-top: 12px;
   align-items: center;
 }
+
+@media (max-width: 550px) {
+  .order__shipping {
+    margin-top: 0;
+  }
+}

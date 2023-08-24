@@ -4,3 +4,9 @@
   line-height: 1.1;
   color: #F55123;
 }
+
+@media (max-width: 435px) {
+  .error {
+    line-height: 1.3;
+  }
+}

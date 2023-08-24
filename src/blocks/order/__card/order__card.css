@@ -2,3 +2,9 @@
   font-size: 13px;
   margin: 4px 0 12px 0;
 }
+
+@media (max-width: 550px) {
+  .order__card {
+    display: none;
+  }
+}

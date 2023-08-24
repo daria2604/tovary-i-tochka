@@ -7,3 +7,9 @@
     text-wrap: balance;
   }
 }
+
+@media (max-width: 435px) {
+  .shipping__text {
+    text-wrap: unset;
+  }
+}

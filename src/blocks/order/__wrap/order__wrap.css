@@ -1,0 +1,11 @@
+.order__wrap {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+@media (max-width: 550px) {
+  .order__wrap {
+    row-gap: 16px;
+  }
+}

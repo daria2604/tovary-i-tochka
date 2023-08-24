@@ -4,3 +4,9 @@
   line-height: 1.4;
   letter-spacing: -0.2px;
 }
+
+@media (max-width: 550px) {
+  .popup__header-text {
+    font-weight: 600;
+  }
+}
