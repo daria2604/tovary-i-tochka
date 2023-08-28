@@ -43,7 +43,9 @@
 @import url(../blocks/cart/__accordion/cart__accordion.css);
 @import url(../blocks/cart/__accordion-label/cart__accordion-label.css);
 @import url(../blocks/cart/__accordion-button/cart__accordion-button.css);
+@import url(../blocks/cart/__accordion-button/_rotate/cart__accordion-button_rotate.css);
 @import url(../blocks/cart/__items/cart__items.css);
+@import url(../blocks/cart/__items/_closed/cart__items_closed.css);
 @import url(../blocks/cart/__absent/cart__absent.css);
 @import url(../blocks/cart/__absent-heading/cart__absent-heading.css);
 /* item */
@@ -85,6 +87,7 @@
 @import url(../blocks/heading/__text/heading__text.css);
 @import url(../blocks/heading/__edit-button/heading__edit-button.css);
 /* delivery */
+@import url(../blocks/delivery/delivery.css);
 @import url(../blocks/delivery/__content/delivery__content.css);
 @import url(../blocks/delivery/__item-list/delivery__item-list.css);
 @import url(../blocks/delivery/__heading/delivery__heading.css);
@@ -171,6 +174,7 @@
 @import url(../blocks/tooltip/_type/tooltip_type_store.css);
 @import url(../blocks/tooltip/_type/tooltip_type_discount.css);
 @import url(../blocks/tooltip/_type/tooltip_type_delivery.css);
+@import url(../blocks/tooltip/_type/tooltip_type_delivery-cart.css);
 @import url(../blocks/tooltip/__heading/tooltip__heading.css);
 @import url(../blocks/tooltip/__text/tooltip__text.css);
 @import url(../blocks/tooltip/__list/tooltip__list.css);

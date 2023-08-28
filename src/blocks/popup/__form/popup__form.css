@@ -9,7 +9,7 @@
   padding: 16px 24px 24px 24px;
   border-radius: 16px;
   min-width: 400px;
-  height: 408px;
+  min-height: 408px;
 }
 
 @media (max-width: 550px) {
