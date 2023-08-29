@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./pages/index.css" />
     <title>Товары и точка</title>
   </head>
   <body class="page">
@@ -13,7 +12,7 @@
           <button type="button" class="burger-menu" id="burgerMenu">
             <span class="burger-menu__lines"></span>
           </button>
-          <img src="./images/logo.svg" alt="Логотип" class="header__logo" />
+          <img src="<%=require('./images/logo.svg')%>" alt="Логотип" class="header__logo" />
           <h1 class="header__logo_type_mobile">Товары и точка</h1>
         </div>
         <div class="header__search">
@@ -186,7 +185,7 @@
                         <a class="item__preview-link">
                           <img
                             class="item__preview-image item__preview-image_absent"
-                            src="./images/goods/tshirt.jpeg"
+                            src="<%=require('./images/tshirt.jpeg')%>"
                             alt="Футболка"
                           />
                         </a>
@@ -216,7 +215,7 @@
                         <a class="item__preview-link">
                           <img
                             class="item__preview-image item__preview-image_absent"
-                            src="./images/goods/phonecase.jpeg"
+                            src="<%=require('./images/phonecase.jpeg')%>"
                             alt="Чехол"
                           />
                         </a>
@@ -245,7 +244,7 @@
                         <a class="item__preview-link">
                           <img
                             class="item__preview-image item__preview-image_absent"
-                            src="./images/goods/color-pencils.jpeg"
+                            src="<%=require('./images/color-pencils.jpeg')%>"
                             alt="Карандаши"
                           />
                         </a>
@@ -309,7 +308,7 @@
                           <li class="delivery__goods-item">
                             <img
                               class="delivery__item-image"
-                              src="./images/goods/tshirt.jpeg"
+                              src="<%=require('./images/tshirt.jpeg')%>"
                               alt=""
                             />
                           </li>
@@ -321,7 +320,7 @@
                             </div>
                             <img
                               class="delivery__item-image"
-                              src="./images/goods/phonecase.jpeg"
+                              src="<%=require('./images/phonecase.jpeg')%>"
                               alt=""
                             />
                           </li>
@@ -333,7 +332,7 @@
                             </div>
                             <img
                               class="delivery__item-image"
-                              src="./images/goods/color-pencils.jpeg"
+                              src="<%=require('./images/color-pencils.jpeg')%>"
                               alt=""
                             />
                           </li>
@@ -352,7 +351,7 @@
                             </div>
                             <img
                               class="delivery__item-image"
-                              src="./images/goods/phonecase.jpeg"
+                              src="<%=require('./images/phonecase.jpeg')%>"
                               alt=""
                             />
                           </li>
@@ -389,7 +388,7 @@
               <div class="card payment__card">
                 <div class="card__icon">
                   <img
-                    src="./images/payment/mir-logo.svg"
+                    src="<%=require('./images/mir-logo.svg')%>"
                     alt=""
                     class="card__icon-image"
                   />
@@ -572,7 +571,7 @@
                   <div class="card order__card">
                     <div class="card__icon">
                       <img
-                        src="./images/payment/mir-logo.svg"
+                        src="<%=require('./images/mir-logo.svg')%>"
                         alt=""
                         class="card__icon-image"
                       />
@@ -788,7 +787,7 @@
                     <div class="card__icon">
                       <img
                         class="card__icon-image"
-                        src="./images/payment/mir-logo.svg"
+                        src="<%=require('./images/mir-logo.svg')%>"
                         alt=""
                       />
                     </div>
@@ -810,7 +809,7 @@
                     <div class="card__icon">
                       <img
                         class="card__icon-image"
-                        src="./images/payment/visa-logo.svg"
+                        src="<%=require('./images/visa-logo.svg')%>"
                         alt=""
                       />
                     </div>
@@ -832,7 +831,7 @@
                     <div class="card__icon">
                       <img
                         class="card__icon-image"
-                        src="./images/payment/mastercard-logo.svg"
+                        src="<%=require('./images/mastercard-logo.svg')%>"
                         alt=""
                       />
                     </div>
@@ -854,7 +853,7 @@
                     <div class="card__icon">
                       <img
                         class="card__icon-image"
-                        src="./images/payment/maestro-logo.svg"
+                        src="<%=require('./images/maestro-logo.svg')%>"
                         alt=""
                       />
                     </div>

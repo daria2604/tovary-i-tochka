@@ -1,3 +1,4 @@
+import './index.css';
 import DeliveryPopup from "../scripts/DeliveryPopup.js";
 import PaymentPopup from "../scripts/PaymentPopup.js";
 import  {items }from "../scripts/data/items.js";
