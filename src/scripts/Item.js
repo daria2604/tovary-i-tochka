@@ -103,8 +103,8 @@ export default class Item {
     this._sellerInfoIcon.addEventListener('mouseout', this._hideSellerTooltip.bind(this));
     this._oldPrice.addEventListener('mouseover', this._showDiscountTooltip.bind(this));
     this._oldPrice.addEventListener('mouseout', this._hideDiscountTooltip.bind(this));
-    this._addButton.addEventListener('click', this._addItem.bind(this))
-    this._removeButton.addEventListener('click', this._removeItem.bind(this))
+    this._addButton.addEventListener('click', this._addItem.bind(this));
+    this._removeButton.addEventListener('click', this._removeItem.bind(this));
 
   }
 
@@ -117,9 +117,10 @@ export default class Item {
     this._itemName = this._item.querySelector('.item__name');
     this._itemName.textContent = this._name;
     this._itemColor = this._item.querySelector('.item__color');
-    this._itemSize = this._item.querySelector('.item__size');    
+    this._itemSize = this._item.querySelector('.item__size'); 
+    this._itemSizeMobile = this._item.querySelector('.item__preview-size');   
     this._itemPrice = this._item.querySelector('.item__price-new');
-    this._itemPrice.textContent = this._price
+    this._itemPrice.textContent = this._price;
     this._itemWarehouse = this._item.querySelector('.item__warehouse');
     this._itemWarehouse.textContent = this._warehouse;
     this._itemSeller = this._item.querySelector('.item__seller-name');
@@ -127,12 +128,14 @@ export default class Item {
    
     this._messageElement = this._item.querySelector('.item__counter-left');
     this._countElement = this._item.querySelector('.counter__number');
-    this._sumElement = this._itemPrice
+    this._sumElement = this._itemPrice;
 
     if(this._size) {
       this._itemSize.textContent = `Размер: ${this._size}`;
+      this._itemSizeMobile.textContent = this._size
     } else {
       this._itemSize.textContent = '';
+      this._itemSizeMobile.style.display = 'none'
     }
 
     if(this._color) {
