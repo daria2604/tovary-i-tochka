@@ -30,13 +30,10 @@ const validator = new FormValidation(settings, cartForm)
 const paymentPopup = new PaymentPopup({ popupSelector: '.popup_type_payment' })
 const deliveryPopup = new DeliveryPopup({ popupSelector: '.popup_type_delivery' })
 
-const itemEl_1 = new Item(items[0], itemTemplate);
-const itemEl_2 = new Item(items[1], itemTemplate);
-const itemEl_3 = new Item(items[2], itemTemplate);
-
-cartItemList.appendChild(itemEl_1.renderItem());
-cartItemList.appendChild(itemEl_2.renderItem());
-cartItemList.appendChild(itemEl_3.renderItem());
+items.forEach((itemData) => {
+  const itemEl = new Item(itemData, itemTemplate);
+  cartItemList.appendChild(itemEl.renderItem());
+});
 
 cartAccordionButton.addEventListener('click', () => {
   cartItemList.classList.toggle('cart__items_closed')
