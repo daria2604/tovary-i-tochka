@@ -1,7 +1,12 @@
 import DeliveryPopup from "../scripts/DeliveryPopup.js";
 import PaymentPopup from "../scripts/PaymentPopup.js";
-import Counter from "../scripts/Counter.js";
 import  {items }from "../scripts/data/items.js";
+import FormValidation from "../scripts/FormValidation.js";
+import { settings } from "../scripts/FormValidation.js";
+import Item from "../scripts/Item.js";
+
+const cartForm = document.querySelector('.form')
+const itemTemplate = document.querySelector('#itemTemplate');
 
 const cartAccordionButton = document.querySelector('.cart__accordion-button')
 const cartItemList = document.querySelector('.cart__items')
@@ -20,6 +25,18 @@ const paymentEditButton = document.querySelector('.payment__edit-button')
 const paymentEditIcon = document.querySelector('.order__payment-edit')
 const deliveryEditIcon = document.querySelector('.order__delivery-edit')
 const deliveryEditButton = document.querySelector('.delivery__edit-button')
+
+const validator = new FormValidation(settings, cartForm)
+const paymentPopup = new PaymentPopup({ popupSelector: '.popup_type_payment' })
+const deliveryPopup = new DeliveryPopup({ popupSelector: '.popup_type_delivery' })
+
+const itemEl_1 = new Item(items[0], itemTemplate);
+const itemEl_2 = new Item(items[1], itemTemplate);
+const itemEl_3 = new Item(items[2], itemTemplate);
+
+cartItemList.appendChild(itemEl_1.renderItem());
+cartItemList.appendChild(itemEl_2.renderItem());
+cartItemList.appendChild(itemEl_3.renderItem());
 
 cartAccordionButton.addEventListener('click', () => {
   cartItemList.classList.toggle('cart__items_closed')
@@ -58,9 +75,6 @@ paymentNowCheckbox.addEventListener('change', () => {
   }
 })
 
-const paymentPopup = new PaymentPopup({ popupSelector: '.popup_type_payment' })
-const deliveryPopup = new DeliveryPopup({ popupSelector: '.popup_type_delivery' })
-
 paymentEditButton.addEventListener('click', () => {
   paymentPopup.open()
 })
@@ -77,127 +91,4 @@ deliveryEditIcon.addEventListener('click', () => {
 paymentPopup.setEventListeners()
 deliveryPopup.setEventListeners()
 
-
-const counter = new Counter(items[0])
-counter.setEventListeners()
-
-// const showInputLabel = (label, activeInputLabelClass) => {
-//   label.classList.add(activeInputLabelClass)
-// }
-
-// const hideInputLabel = (label, activeInputLabelClass) => {
-//   label.classList.remove(activeInputLabelClass)
-// }
-
-// const isFocused = (input, inputLabelTemplate, activeInputLabelClass) => {
-//   const label = document.querySelector(`${inputLabelTemplate}${input.name}`)
-
-//   if((label.style.visibility = 'hidden')) {
-//     console.log('yes')
-//     showInputLabel(label, activeInputLabelClass)
-//   } else {
-//     console.log('no')
-//     hideInputLabel(label, activeInputLabelClass)
-//   }
-// }
-
-const showInputeError = (input, errorText, activeErrorClass, invalidInputClass) => {
-  errorText.classList.add(activeErrorClass);
-  input.classList.add(invalidInputClass);
-}
-
-const hideInputeError = (input, errorText, activeErrorClass,invalidInputClass) => {
-  errorText.classList.remove(activeErrorClass)
-  input.classList.remove(invalidInputClass)
-}
-
-const checkInputValidity = (input, errroClassTemplate, activeErrorClass, invalidInputClass) => {
-  const errorText = document.querySelector(`${errroClassTemplate}${input.name}`)
-
-  switch (input.name) {
-    case 'name':
-    case 'surname':
-      if (!input.value) {
-        showInputeError(input, errorText, activeErrorClass, invalidInputClass)
-      } else {
-        hideInputeError(input, errorText, activeErrorClass,invalidInputClass)
-      }
-      break;
-
-    case 'email':
-      if (!input.value) {
-        errorText.textContent = 'Укажите электронную почту';
-        showInputeError(input, errorText, activeErrorClass, invalidInputClass)
-      } else if (!input.validity.valid) {
-        errorText.textContent = 'Проверьте адрес электронной почты';
-        showInputeError(input, errorText, activeErrorClass, invalidInputClass)
-      } else {
-        hideInputeError(input, errorText, activeErrorClass,invalidInputClass)
-      }
-      break;
-
-      case 'telephone':
-        if (!input.value) {
-          errorText.textContent = 'Укажите номер телефона';
-          showInputeError(input, errorText, activeErrorClass, invalidInputClass)
-        } else if (!input.validity.valid) {
-          errorText.textContent = 'Формат: +9 999 999 99 99';
-          showInputeError(input, errorText, activeErrorClass, invalidInputClass)
-        } else {
-          hideInputeError(input, errorText, activeErrorClass,invalidInputClass)
-        }
-        break;
-
-      case 'inn':
-        if (!input.value) {
-          errorText.textContent = 'Укажите ИНН';
-          errorText.style.color = '#F55123';
-          showInputeError(input, errorText, activeErrorClass, invalidInputClass)
-        } else if (input.value !== 14) {
-          errorText.textContent = 'Проверьте ИНН';
-          errorText.style.color = '#F55123';
-          showInputeError(input, errorText, activeErrorClass, invalidInputClass)
-        } else {
-          hideInputeError(input, errorText, activeErrorClass,invalidInputClass)
-        }
-        break;
-
-      default:
-        break;
-  }
-}
-
-const hasInvalidInput = (inputList) => {
-  return Array.from(inputList).some((input) => !input.validity.valid)
-}
-
-const setEventListeners = (form, inputList, errroClassTemplate, activeErrorClass, invalidInputClass) => {
-  form.addEventListener('submit', (evt) => {
-    evt.preventDefault()
-    
-  })
-
-  inputList.forEach(input => {
-    input.addEventListener('input', () => {
-      checkInputValidity(input, errroClassTemplate, activeErrorClass, invalidInputClass);
-    })
-  }) 
-}
-
-const enableValidation = (config) => {
-  const form = document.forms.cartForm;
-  const inputList = Array.from(form.querySelectorAll(config.inputListSelector))
-  const submitButton = form.querySelector(config.submitButtonSelector)
-
-  setEventListeners(form, inputList, config.errroClassTemplate, config.activeErrorClass, config.invalidInputClass)
-}
-
-enableValidation({
-  inputListSelector: '.receiver__input-field',
-  errroClassTemplate: '.error_type_',
-  activeErrorClass: 'error_active',
-  invalidInputClass: 'receiver__input-field_type_error',
-  inputLabelTemplate: '.receiver__label_type_',
-  activeInputLabelClass: 'receiver__label_active',
-  submitButtonSelector: '.order__submit-button',
-});
+validator.enableValidation()

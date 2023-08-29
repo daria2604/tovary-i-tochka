@@ -64,120 +64,82 @@
                 <button type="button" class="cart__accordion-button"></button>
               </div>
               <div class="cart__items">
-                <div class="item">
-                  <div class="item__container">
-                    <div class="item__preview">
-                      <label class="checkbox checkbox_type_mobile">
-                        <input
-                          type="checkbox"
-                          name="checkboxAll"
-                          class="visually-hidden"
-                          checked
-                        />
-                        <span
-                          class="checkbox__input checkbox__input_type_item"
-                        ></span>
-                      </label>
-                      <a class="item__preview-link">
-                        <img
-                          class="item__preview-image"
-                          src="./images/goods/tshirt.jpeg"
-                          alt="Футболка"
-                        />
-                      </a>
-                      <div class="item__preview-size">56</div>
+                <template id="itemTemplate">
+                  <div class="item">
+                    <div class="item__container">
+                      <div class="item__preview">
+                        <label class="checkbox checkbox_type_mobile">
+                          <input
+                            type="checkbox"
+                            name="checkboxAll"
+                            class="visually-hidden"
+                            checked
+                          />
+                          <span
+                            class="checkbox__input checkbox__input_type_item"
+                          ></span>
+                        </label>
+                        <a class="item__preview-link">
+                          <img
+                            class="item__preview-image"
+                            src=""
+                            alt="Футболка"
+                          />
+                        </a>
+                        <div class="item__preview-size"></div>
+                      </div>
+                      <div class="item__info">
+                        <div class="item__price_type_mobile item__price">
+                          <div class="item__price-wrap">
+                            <span class="item__price-new"></span>
+                            <span class="item__price-currency">сом</span>
+                          </div>
+                          <p class="item__price-old"></p>
+                        </div>
+                        <h3 class="item__name"></h3>
+                        <div class="item__feature">
+                          <p class="item__color"></p>
+                          <p class="item__size"></p>
+                        </div>
+                        <div class="item__store">
+                          <p class="item__warehouse"></p>
+                          <div class="item__seller">
+                            <p class="item__seller-name"></p>
+                            <div class="item__seller-about"></div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="item__info">
-                      <div class="item__price_type_mobile item__price">
+                    <div class="item__actions">
+                      <div class="item__counter">
+                        <div class="counter">
+                          <button
+                            type="button"
+                            class="counter__button counter__minus"
+                          >
+                            &minus;
+                          </button>
+                          <input
+                            type="number"
+                            min="1"
+                            class="counter__number"
+                            value="1"
+                          />
+                          <button
+                            type="button"
+                            class="counter__button counter__plus"
+                          >
+                            &plus;
+                          </button>
+                        </div>
+                        <p class="item__counter-left"></p>
+                      </div>
+                      <div class="item__price">
                         <div class="item__price-wrap">
-                          <p class="item__price-new"></p>
+                          <p class="item__price-new">522</p>
                           <p class="item__price-currency">сом</p>
                         </div>
                         <p class="item__price-old">1051 сом</p>
-                      </div>
-                      <h3 class="item__name">Футболка UZcotton мужская</h3>
-                      <div class="item__feature">
-                        <p class="item__color">Цвет: белый</p>
-                        <p class="item__size">Размер: 56</p>
-                      </div>
-                      <div class="item__store">
-                        <p class="item__warehouse">Коледино WB</p>
-                        <div class="item__seller">
-                          <p class="item__seller-name">OOO Вайлдберриз</p>
-                          <div class="item__seller-about"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item__actions">
-                    <div class="item__counter">
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__button counter__minus"
-                          disabled
-                        >
-                          &minus;
-                        </button>
-                        <input
-                          type="number"
-                          min="1"
-                          class="counter__number"
-                          value="1"
-                        />
-                        <button
-                          type="button"
-                          class="counter__button counter__plus"
-                        >
-                          &plus;
-                        </button>
-                      </div>
-                      <p class="item__counter-left">Осталось 2 шт.</p>
-                    </div>
-                    <div class="item__price">
-                      <div class="item__price-wrap">
-                        <span class="item__price-new">522</span>
-                        <span class="item__price-currency">сом</span>
-                      </div>
-                      <p class="item__price-old">1051 сом</p>
-                    </div>
-                    <div class="item__icons">
-                      <div class="item__icon like-icon like-icon_active"></div>
-                      <div class="item__icon delete-icon"></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item__container">
-                    <div class="item__preview">
-                      <label class="checkbox checkbox_type_mobile">
-                        <input
-                          type="checkbox"
-                          name="checkboxAll"
-                          class="visually-hidden"
-                          checked
-                        />
-                        <span
-                          class="checkbox__input checkbox__input_type_item"
-                        ></span>
-                      </label>
-                      <a class="item__preview-link">
-                        <img
-                          class="item__preview-image"
-                          src="./images/goods/phonecase.jpeg"
-                          alt="Чехол"
-                        />
-                      </a>
-                    </div>
-                    <div class="item__info">
-                      <div class="item__price_type_mobile item__price">
-                        <div class="item__price-wrap">
-                          <p class="item__price-new item__price-new_size_16">
-                            2 100 047
-                          </p>
-                          <p class="item__price-currency">сом</p>
-                        </div>
-                        <p class="item__price-old">2 300 047 сом</p>
                         <div class="tooltip tooltip_type_discount">
                           <ul class="tooltip__heading-list tooltip__list">
                             <li class="tooltip__heading-item tooltip__text">
@@ -193,163 +155,21 @@
                           </ul>
                         </div>
                       </div>
-                      <h3 class="item__name">
-                        Силиконовый чехол картхолдер (отверстия) для карт,
-                        прозрачный кейс бампер на Apple iPhone XR, MobiSafe
-                      </h3>
-                      <div class="item__feature">
-                        <p class="item__color">Цвет: прозрачный</p>
+                      <div class="item__icons">
+                        <div class="item__icon like-icon"></div>
+                        <div class="item__icon delete-icon"></div>
                       </div>
-                      <div class="item__store">
-                        <p class="item__warehouse">Коледино WB</p>
-                        <div class="item__seller">
-                          <p class="item__seller-name">OOO Мегапрофстиль</p>
-                          <div class="item__seller-about"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="item__actions">
-                    <div class="item__counter">
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__button counter__minus"
-                        >
-                          &minus;
-                        </button>
-                        <input
-                          type="number"
-                          min="1"
-                          class="counter__number"
-                          value="200"
-                        />
-                        <button
-                          type="button"
-                          class="counter__button counter__plus"
-                        >
-                          &plus;
-                        </button>
-                      </div>
-                    </div>
-                    <div class="item__price">
-                      <div class="item__price-wrap">
-                        <p class="item__price-new item__price-new_size_16">
-                          2 100 047
+                      <div class="tooltip tooltip_type_store">
+                        <h4 class="tooltip__heading">OOO «Вайлдберриз»</h4>
+                        <p class="tooltip__text">ОГРН: 5167746237148</p>
+                        <p class="tooltip__text">
+                          129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1,
+                          помещение 2, офис 34
                         </p>
-                        <p class="item__price-currency">сом</p>
-                      </div>
-                      <p class="item__price-old">2 300 047 сом</p>
-                      <div class="tooltip tooltip_type_discount">
-                        <ul class="tooltip__heading-list tooltip__list">
-                          <li class="tooltip__heading-item tooltip__text">
-                            Скидка 55%
-                          </li>
-                          <li class="tooltip__heading-item tooltip__text">
-                            Скидка покупателя 10%
-                          </li>
-                        </ul>
-                        <ul class="tooltip__text-list tooltip__list">
-                          <li class="tooltip__text">-300 сом</li>
-                          <li class="tooltip__text">-30 сом</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="item__icons">
-                      <div class="item__icon like-icon like-icon_active"></div>
-                      <div class="item__icon delete-icon"></div>
-                    </div>
-                  </div>
-                  <div class="tooltip tooltip_type_store">
-                    <h4 class="tooltip__heading">OOO «МЕГАПРОФСТИЛЬ»</h4>
-                    <p class="tooltip__text">ОГРН: 5167746237148</p>
-                    <p class="tooltip__text">
-                      129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1,
-                      помещение 2, офис 34
-                    </p>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="item__container">
-                    <div class="item__preview">
-                      <label class="checkbox checkbox_type_mobile">
-                        <input
-                          type="checkbox"
-                          name="checkboxAll"
-                          class="visually-hidden"
-                          checked
-                        />
-                        <span
-                          class="checkbox__input checkbox__input_type_item"
-                        ></span>
-                      </label>
-                      <a class="item__preview-link">
-                        <img
-                          class="item__preview-image"
-                          src="./images/goods/color-pencils.jpeg"
-                          alt="Карандаши"
-                        />
-                      </a>
-                    </div>
-                    <div class="item__info">
-                      <div class="item__price_type_mobile item__price">
-                        <div class="item__price-wrap">
-                          <p class="item__price-new">494</p>
-                          <p class="item__price-currency">сом</p>
-                        </div>
-                        <p class="item__price-old">950 сом</p>
-                      </div>
-                      <h3 class="item__name">
-                        Карандаши цветные Faber-Castell "Замок", набор 24 цвета,
-                        заточенные, шестигранные, Faber-Castell
-                      </h3>
-                      <div class="item__store">
-                        <p class="item__warehouse">Коледино WB</p>
-                        <div class="item__seller">
-                          <p class="item__seller-name">OOO Вайлдберриз</p>
-                          <div class="item__seller-about"></div>
-                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="item__actions">
-                    <div class="item__counter">
-                      <div class="counter">
-                        <button
-                          type="button"
-                          class="counter__button counter__minus"
-                        >
-                          &minus;
-                        </button>
-                        <input
-                          type="number"
-                          min="1"
-                          class="counter__number"
-                          value="2"
-                        />
-                        <button
-                          type="button"
-                          class="counter__button counter__plus"
-                          disabled
-                        >
-                          &plus;
-                        </button>
-                      </div>
-                      <p class="item__counter-left">Осталось 2 шт.</p>
-                    </div>
-                    <div class="item__price">
-                      <div class="item__price-wrap">
-                        <p class="item__price-new">494</p>
-                        <p class="item__price-currency">сом</p>
-                      </div>
-                      <p class="item__price-old">950 сом</p>
-                    </div>
-                    <div class="item__icons">
-                      <div class="item__icon like-icon like-icon_active"></div>
-                      <div class="item__icon delete-icon"></div>
-                    </div>
-                  </div>
-                </div>
+                </template>
               </div>
               <div class="cart__absent">
                 <div class="cart__accordion">
@@ -602,7 +422,7 @@
                       required
                     />
                     <span id="error-name" class="error error_type_name"
-                      >Укажите имя</span
+                      ></span
                     >
                   </div>
                   <div class="receiver__input-wrap">
@@ -620,7 +440,7 @@
                       required
                     />
                     <span id="error-surname" class="error error_type_surname"
-                      >Введите фамилию</span
+                      ></span
                     >
                   </div>
                 </div>
@@ -640,12 +460,12 @@
                       required
                     />
                     <span id="error-email" class="error error_type_email"
-                      >Укажите электронную почту</span
+                      ></span
                     >
                   </div>
                   <div class="receiver__input-wrap">
                     <label
-                      class="receiver__label receiver__label_type_telephone receiver__label_active"
+                      class="receiver__label receiver__label_type_telephone"
                       for="telephone"
                       >Телефон</label
                     >
@@ -655,14 +475,13 @@
                       id="telephone"
                       class="receiver__input-field receiver__input-field_type_telephone"
                       placeholder="Телефон"
-                      pattern="\+[0-9]{1,3}\s[0-9]{3}\s[0-9]{3}\s[0-9]{2}\s[0-9]{2}"
-                      value="+7 988 123 45 67"
+                      value=""
                       required
                     />
                     <span
                       id="error-telephone"
                       class="error error_type_telephone"
-                      >Укажите номер телефона</span
+                      ></span
                     >
                   </div>
                   <div class="receiver__input-wrap">
@@ -672,7 +491,7 @@
                       >ИНН</label
                     >
                     <input
-                      type="number"
+                      type="text"
                       name="inn"
                       id="inn"
                       class="receiver__input-field receiver__input-field_type_inn"
@@ -1079,30 +898,7 @@
             <div class="popup__address">
               <h4 class="popup__address-heading">Мои адреса</h4>
               <div class="popup__item-list popup__item-list_type_address">
-                <!-- <template id="popupItemTemplate">
                 <div class="popup__item popup__item_type_address">
-                  <div class="popup__radio">
-                    <div class="radio">
-                      <label>
-                        <input type="radio" name="radioButton" class="visually-hidden" value="" checked>
-                        <span class="popup__radio-input radio__input radio__input_type_address"></span>
-                      </label>
-                      <div class="popup__address-wrap">
-                        <span class="radio__text"></span>
-                        <div class="delivery__address-about">
-                          <div class="delivery__address-rating">
-                            <span class="delivery__address-star"></span>
-                            <p class="delivery__address-number"></p>
-                          </div>
-                          <p class="delivery__schedule"></p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <span class="popup__delete-icon delete-icon"></span>
-                </div>
-              </template> -->
-                <!-- <li class="popup__item popup__item_type_address">
                   <div class="popup__radio">
                     <div class="radio">
                       <label>
@@ -1131,8 +927,8 @@
                     </div>
                   </div>
                   <span class="popup__delete-icon delete-icon"></span>
-                </li>
-                <li class="popup__item popup__item_type_address">
+                </div>
+                <div class="popup__item popup__item_type_address">
                   <div class="popup__radio">
                     <div class="radio">
                       <label>
@@ -1160,8 +956,8 @@
                     </div>
                   </div>
                   <span class="popup__delete-icon delete-icon"></span>
-                </li>
-                <li class="popup__item popup__item_type_address">
+                </div>
+                <div class="popup__item popup__item_type_address">
                   <div class="popup__radio">
                     <div class="radio">
                       <label>
@@ -1190,7 +986,7 @@
                     </div>
                   </div>
                   <span class="popup__delete-icon delete-icon"></span>
-                </li> -->
+                </div>
               </div>
             </div>
           </div>

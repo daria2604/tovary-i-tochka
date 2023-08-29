@@ -1,3 +1,4 @@
 .cart__accordion-button_rotate {
   transform: rotateX(-180deg);
+  transition: transform 0.3s ease;
 }

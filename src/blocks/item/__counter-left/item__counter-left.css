@@ -1,4 +1,5 @@
 .item__counter-left {
+  visibility: visible;
   color: #FF3B30;
   font-size: 13px;
   text-align: left;

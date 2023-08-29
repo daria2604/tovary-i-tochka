@@ -1,4 +1,5 @@
 .cart__accordion-button {
+  transform: none;
   background: url(../../../images/arrow.svg) no-repeat center;
   width: 20px;
   height: 20px;
