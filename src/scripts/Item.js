@@ -146,7 +146,9 @@ export default class Item {
 
     if (this._quantity <= 2) {
       this._messageElement.textContent = 'Осталось 2 шт.';
-    } 
+    } else {
+      this._messageElement.style.display = 'none';
+    }
 
     this._setEventListeners();
     return this._item;
